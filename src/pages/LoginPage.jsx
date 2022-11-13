@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 // Librares
 import * as Yup from "yup";
-// import { useHistory } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useFormik, FormikProvider } from "formik";
 // Store
@@ -31,7 +30,6 @@ const LoginPage = () => {
     const [loading, setLoading] = useState(false);
     const { message } = useSelector((state) => state.message);
 	const navigate = useNavigate()
-    // const history = useHistory();
     const dispatch = useDispatch();
 
     useEffect(() => {
