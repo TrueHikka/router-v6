@@ -32,7 +32,6 @@ const LoginPage = () => {
 	const navigate = useNavigate()
     const dispatch = useDispatch();
 	const location = useLocation()
-	console.log(location)
     useEffect(() => {
         dispatch(clearMessage());
     }, [dispatch]);
@@ -63,10 +62,9 @@ const LoginPage = () => {
         <>
             <div className='mb-12 text-slate-900'>
                 <Card.Title>Login</Card.Title>
-
                 <div className='text-sm text-slate-600'>
                     or{" "}
-                    <StyledNavLink to='/auth/signUp' styleType='underline'>
+                    <StyledNavLink to='../signUp' styleType='underline'>
                         {" "}
                         start your 14-day free trial
                     </StyledNavLink>
