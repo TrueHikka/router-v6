@@ -9,12 +9,13 @@ import DateDisplay from "../../components/DateDisplay";
 import SpinnerLader from "../../components/SpinnerLoader";
 import BackButton from "../../components/BackButton";
 
+
 const PostPage = () => {
     const { postId } = useParams();
-console.log({postId})
+
     const loadingStatus = useSelector(loadingStatusSelector());
     const post = useSelector(postSelector(postId));
-	
+
 	if(loadingStatus !== "pending" && loadingStatus !== "idle" && !post) {
 		return <Navigate to="/posts" />
 	}
@@ -23,9 +24,7 @@ console.log({postId})
         <>
             <div className='max-w-8xl mx-auto'>
                 <div className='flex px-4 pt-8 pb-10 lg:px-8 '>
-					<BackButton>
-						Go back
-					</BackButton>
+					<BackButton>Go back</BackButton>
                 </div>
             </div>
             <div className='px-4 sm:px-6 md:px-9'>
