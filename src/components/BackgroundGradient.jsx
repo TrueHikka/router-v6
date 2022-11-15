@@ -14,7 +14,7 @@ const BackgroundGradiend = () => {
 						className="w-[71.75rem] flex-none max-w-none dark:hidden"
 					/>
 				</picture>
-				<picture>
+				{/* <picture>
 					<source
 						srcSet="https://tailwindcss.com/_next/static/media/docs-dark@30.77f062b5fd90f0d2cd4752cd9a8649c8.avif"
 						type="image/avif"
@@ -24,7 +24,7 @@ const BackgroundGradiend = () => {
 						alt=""
 						className="w-[90rem] flex-none max-w-none hidden dark:block"
 					/>
-				</picture>
+				</picture> */}
 			</div>
 		</div>
 	);
